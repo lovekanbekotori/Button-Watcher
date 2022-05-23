@@ -25,7 +25,7 @@ public Plugin:myinfo =
 	name = "Button Watcher",
 	author = "Franc1sco franug",
 	description = "Generates an output when a button is pressed",
-	version = "1.0",
+	version = "1.1",
 	url = "http://steamcommunity.com/id/franug"
 };
 
@@ -44,9 +44,9 @@ public Presionado(const String:output[], caller, activator, Float:delay)
 	decl String:entity[512];
 	GetEntPropString(caller, Prop_Data, "m_iName", entity, sizeof(entity));
 
-	PrintToChatAll(" \x02[BW] \x0C%N \x04pressed button\x0C %i %s", activator, caller, entity);
+	PrintToChatAll(" \x03[SM] \x01%N \x05pressed button\x03 %i %s", activator, caller, entity);
 	
-	LogMessage("[BW] %L pressed the button %i %s", activator, caller, entity)
+	LogMessage("[SM] %L pressed the button %i %s", activator, caller, entity)
 
 	espresionado[caller] = true;
 	CreateTimer(5.0, Pasado, caller);
