@@ -32,7 +32,7 @@ public Plugin:myinfo =
 public OnPluginStart()
 {
 	HookEntityOutput("func_button", "OnPressed", Presionado);
-	CreateConVar("sm_buttonwatcher", "1.1", "", FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
+	CreateConVar("sm_buttonwatcher", "1.1", "", FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
 }
 
 public Presionado(const String:output[], caller, activator, Float:delay)
