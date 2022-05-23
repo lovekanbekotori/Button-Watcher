@@ -25,7 +25,7 @@ public Plugin:myinfo =
 	name = "Button Watcher",
 	author = "Franc1sco franug",
 	description = "Generates an output when a button is pressed",
-	version = "1.1",
+	version = "1.0",
 	url = "http://steamcommunity.com/id/franug"
 };
 
